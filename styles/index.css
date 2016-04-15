@@ -1,0 +1,96 @@
+.Icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.Icon--goldstar {
+  fill: gold;
+  stroke: coral;
+  stroke-width: 5%;
+  stroke-linejoin: round;
+}
+
+.Icon--strokespace {
+  margin: 5px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 5%;
+}
+
+.Icon--strokespace1 {
+  color: rgba(148,0,211,1);
+  outline: solid 1px rgba(148,0,211,.5);
+  background-color: rgba(148,0,211,.05);
+}
+
+.Icon--strokespace2 {
+  color: deepskyblue;
+  color: rgba(0,160,240,1);
+  outline: solid 1px rgba(0,160,240,.5);
+  background-color: rgba(0,160,240,.05);
+}
+
+.Icon--stroketest {
+  fill: none;
+  stroke: currentColor;
+}
+
+.purpleIconBox {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: content-box;
+  margin: .1em;
+  padding: .1em;
+  border-radius: .1em;
+  background-color: blueviolet;
+  background-image: linear-gradient(to bottom, mediumslateblue, blueviolet);
+}
+
+.Icon.purpleIconBox,
+.purpleIconBox .Icon {
+  vertical-align: top;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2%;
+  stroke-miterlimit: 10;
+}
+
+.Icon--two1 {
+  fill: firebrick;
+  color: darkkhaki;
+}
+
+.Icon--two2 {
+  fill: rebeccapurple;
+  color: mediumturquoise;
+}
+
+.Icon--novars {
+  color: hotpink;
+}
+
+.Icon--vars1 {
+  --icon-color1: #F69EC3;
+  --icon-color2: #F487B5;
+  --icon-color3: #F26FA6;
+  --icon-color4: #F05898;
+  --icon-color5: #EE4089;
+  --icon-color6: #EC297B;
+}
+
+.Icon--vars2 {
+  --icon-color1: #80B23C;
+  --icon-color2: #2A91A8;
+  --icon-color3: #4A46AA;
+  --icon-color4: #DA3A35;
+  --icon-color5: #F16522;
+  --icon-color6: #FCB400;
+}
+
+.icon-wrapper {
+  font-size: 800%;
+  line-height: 1;
+}
