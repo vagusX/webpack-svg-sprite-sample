@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <h1>{{ msg }}</h1>
+    <svg class="Icon" aria-hidden="true" id="panda">
+      <use :xlink:href="iconSet.Panda"></use>
+    </svg>
     <div class="icon-wrapper">
       <div>
         <svg class="Icon" aria-hidden="true">

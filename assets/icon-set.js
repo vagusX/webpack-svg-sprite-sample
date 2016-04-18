@@ -7,6 +7,7 @@ import IconicAperture from './icons/iconic-aperture.svg'
 import Play from './icons/play.svg'
 import Star from './icons/star.svg'
 import Twitter from './icons/twitter.svg'
+import Panda from './icons/panda.svg'
 
 export {
   Check,
@@ -18,4 +19,7 @@ export {
   Play,
   Star,
   Twitter,
+  Panda
 }
+
+

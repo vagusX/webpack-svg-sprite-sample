@@ -1,5 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
+var svgoConfig = require('./svgo-config.json')
 
 module.exports = {
   entry: './vue/main.js',
@@ -12,6 +13,12 @@ module.exports = {
     root: path.join(__dirname, 'node_modules'),
   },
   module: {
+    preLoaders: [
+      {
+        test: /\.svg$/,
+        loader: 'svgo?' + JSON.stringify(svgoConfig)
+      }
+    ],
     loaders: [
       {
         test: /\.vue$/,

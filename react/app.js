@@ -11,6 +11,9 @@ export default class App extends React.Component {
       <div>
         <h1>Hello React!</h1>
         <div className="icon-wrapper">
+          <svg class="Icon" aria-hidden="true" id="panda">
+            <use xlinkHref={iconSet.Panda}></use>
+          </svg>
           <div>
             <svg className="Icon" aria-hidden="true">
               <use xlinkHref={iconSet.Play}></use>
