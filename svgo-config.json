@@ -12,8 +12,6 @@
     { "convertStyleToAttrs": true },
     { "convertTransform": true },
     { "mergePaths": true },
-    { "moveElemsAttrsToGroup": true },
-    { "moveGroupAttrsToElems": true },
     { "removeComments": true },
     { "removeDesc": true },
     { "removeDimensions": true },
@@ -32,6 +30,8 @@
     { "removeUnusedNS": true },
     { "removeUselessStrokeAndFill": true },
     { "removeXMLProcInst": true },
+    { "removeStyleElement": true },
+    { "removeUnknownsAndDefaults": true},
     { "sortAttrs": true }
   ]
 }

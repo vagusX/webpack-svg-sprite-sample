@@ -1,84 +1,55 @@
 <template>
   <div id="app">
     <h1>{{ msg }}</h1>
-    <svg class="Icon" aria-hidden="true" id="panda">
-      <use :xlink:href="iconSet.Panda"></use>
-    </svg>
     <div class="icon-wrapper">
+      <icon symbol="panda"></icon>
       <div>
-        <svg class="Icon" aria-hidden="true">
-          <use :xlink:href="iconSet.Play"></use>
-        </svg>
-        <svg class="Icon" aria-hidden="true">
-          <use :xlink:href="iconSet.Cross"></use>
-        </svg>
+        <icon symbol="play"></icon>
+        <icon symbol="cross"></icon>
       </div>
       <div style="stroke-width: 5%;">
-        <svg class="Icon Icon--stroketest" style="color:orchid" aria-hidden="true">
-          <use :xlink:href="iconSet.Heart1"></use>
-        </svg>
-        <svg class="Icon Icon--stroketest" style="color:mediumpurple;width:2em;" aria-hidden="true">
-          <use :xlink:href="iconSet.Hearts"></use>
-        </svg>
+        <span style="color:orchid">
+          <icon symbol="heart1" class="Icon--stroketest"></icon>
+        </span>
+        <span style="color:mediumpurple;width:2em;">
+          <icon symbol="hearts" class="Icon--stroketest"></icon>
+        </span>
       </div>
       <div>
-        <svg class="Icon" aria-hidden="true">
-          <use :xlink:href="iconSet.Star"></use>
-        </svg>
-        <svg class="Icon Icon--goldstar" aria-hidden="true">
-          <use :xlink:href="iconSet.Star"></use>
-        </svg>
+        <icon symbol="star"></icon>
+        <icon symbol="star" class="Icon--goldstar"></icon>
       </div>
       <div>
-        <svg class="Icon" aria-hidden="true">
-          <use :xlink:href="iconSet.Check"></use>
-        </svg>
-        <svg class="Icon Icon--two1" aria-hidden="true">
-          <use :xlink:href="iconSet.Check"></use>
-        </svg>
-        <svg class="Icon Icon--two2" aria-hidden="true">
-          <use :xlink:href="iconSet.Check"></use>
-        </svg>
+        <icon symbol="check"></icon>
+        <icon symbol="check" class="Icon--two1"></icon>
+        <icon symbol="check" class="Icon--two2"></icon>
       </div>
       <div>
-        <svg class="Icon purpleIconBox" aria-hidden="true">
-          <use :xlink:href="iconSet.Twitter"></use>
-        </svg>
+
+        <icon symbol="twitter" class="purpleIconBox"></icon>
         <span class="purpleIconBox">
-          <svg class="Icon" aria-hidden="true">
-            <use :xlink:href="iconSet.Twitter"></use>
-          </svg>
+          <icon symbol="twitter" ></icon>
         </span>
       </div>
       <div>
-        <span>
-          <svg class="Icon" aria-hidden="true">
-            <use :xlink:href="iconSet.IconicAperture"></use>
-          </svg>
-        </span>
-        <span>
-          <svg class="Icon Icon--vars1" aria-hidden="true">
-            <use :xlink:href="iconSet.IconicAperture"></use>
-          </svg>
-        </span>
-        <span>
-          <svg class="Icon Icon--vars2" aria-hidden="true">
-            <use :xlink:href="iconSet.IconicAperture"></use>
-          </svg>
-        </span>
+        <icon symbol="iconic-aperture"></icon>
+        <icon symbol="iconic-aperture" class="Icon--vars1"></icon>
+        <icon symbol="iconic-aperture" class="Icon--vars2"></icon>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import * as iconSet from '../assets/icon-set'
+import Icon from './components/icon'
 
 export default {
+  components: {
+    Icon
+  },
   data () {
     return {
-      msg: 'Hello Vue!',
-      iconSet: iconSet
+      msg: 'Hello Vue!'
     }
   }
 }
