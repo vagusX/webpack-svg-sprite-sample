@@ -1,5 +1,7 @@
 ## Webpack SVG sprite sample project
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/vagusX/webpack-svg-sprite-sample.svg)](https://greenkeeper.io/)
+
 ###Usage
 
 in Vue
